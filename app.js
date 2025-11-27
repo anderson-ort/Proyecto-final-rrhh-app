@@ -6,7 +6,10 @@ const runServer = async () => {
   try {
     await sequelize.authenticate();
     console.log(`Conexión a la base de datos MySQL exitosa. ${config.MYSQL_HOST}`);
-    server.listen(config.SERVER_PORT, config.SERVER_HOST, () => {
+    server.listen(
+      config.SERVER_PORT,
+      //config.SERVER_HOST, 
+      () => {
       console.log(`Servidor escuchando en http:// ${config.SERVER_HOST}:${config.SERVER_PORT}`);
     });
   } catch (error) {
