@@ -2,7 +2,7 @@
   "name": "proyecto-final-rrhh-app",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
   "private": false,
@@ -16,8 +16,8 @@
   "author": "undefined",
   "contributors": [],
   "scripts": {
-    "dev": "node --watch app.js",
-    "start": "node app.js",
+    "dev": "node --watch index.js",
+    "start": "node index.js",
     "linter:check": "npx @biomejs/biome lint ./src app.js",
     "linter:format": "npx @biomejs/biome format --write ./src app.js"
   },
